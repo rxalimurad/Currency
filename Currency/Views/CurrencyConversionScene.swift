@@ -14,7 +14,7 @@ class CurrencyConversionScene: UIViewController {
     
     // MARK: - Properties
     let rounter: Router = ApplicationRouter()
-   
+    private let viewModel = CurrencyConversionViewModel(service: CurrencyConversionService())
     
     // MARK: - Life Cycle
     override func viewDidLoad() {

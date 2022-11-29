@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import Combine
 @testable import Currency
 
 class CurrencyVMTests: XCTestCase {

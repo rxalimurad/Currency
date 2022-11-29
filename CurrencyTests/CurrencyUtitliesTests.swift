@@ -7,7 +7,6 @@
 
 
 import XCTest
-import Combine
 @testable import Currency
 
 class CurrencyUtitliesTests: XCTestCase {
