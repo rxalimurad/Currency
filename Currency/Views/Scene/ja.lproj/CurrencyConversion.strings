@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3wH-ec-Dwg"; */
+"3wH-ec-Dwg.text" = "";
+
+/* Class = "UITextField"; placeholder = "Select Currency"; ObjectID = "8Pj-L6-ztO"; */
+"8Pj-L6-ztO.placeholder" = "通貨を選択";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rWt-cY-Xcb"; */
+"rWt-cY-Xcb.text" = "";
+
+/* Class = "UITextField"; placeholder = "Enter Amount"; ObjectID = "vC6-U3-VcG"; */
+"vC6-U3-VcG.placeholder" = "金額を入力します";
