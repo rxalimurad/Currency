@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Combine
 
 class CurrencyConversionScene: UIViewController {
     // MARK: - Outlets
@@ -14,6 +13,7 @@ class CurrencyConversionScene: UIViewController {
     
     
     // MARK: - Properties
+    let rounter: Router = ApplicationRouter()
    
     
     // MARK: - Life Cycle
@@ -21,6 +21,12 @@ class CurrencyConversionScene: UIViewController {
         super.viewDidLoad()
        
         
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func actionForDetailBtn(sender: UIButton) {
+        rounter.route(to: Route.detailScreen.rawValue, from: self, parameters: nil)
     }
     
     // MARK: - Methods
