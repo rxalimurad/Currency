@@ -10,6 +10,18 @@
 		FA8740E7290CFD6A00640EB5 /* CurrencyMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8740E6290CFD6A00640EB5 /* CurrencyMockService.swift */; };
 		FA8740E9290D1C6700640EB5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8740E8290D1C6700640EB5 /* Array.swift */; };
 		FA8740EB290D753B00640EB5 /* CurrencyUtitliesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8740EA290D753B00640EB5 /* CurrencyUtitliesTests.swift */; };
+		FA92FBCE2935E183007CD2F8 /* TextInputWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBCC2935E182007CD2F8 /* TextInputWidget.swift */; };
+		FA92FBCF2935E183007CD2F8 /* SelectorInputWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */; };
+		FA92FBD12935E1B9007CD2F8 /* SelectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBD02935E1B9007CD2F8 /* SelectorModel.swift */; };
+		FA92FBD42935EC01007CD2F8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FA92FBD32935EC01007CD2F8 /* RxCocoa */; };
+		FA92FBD62935EC01007CD2F8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA92FBD52935EC01007CD2F8 /* RxSwift */; };
+		FA92FBD82935ECE5007CD2F8 /* CurrencyDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBD72935ECE5007CD2F8 /* CurrencyDetailScene.swift */; };
+		FA92FBDA2935EDE6007CD2F8 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBD92935EDE6007CD2F8 /* CurrencyDetailViewModel.swift */; };
+		FA92FBDC2935F25F007CD2F8 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBDB2935F25F007CD2F8 /* DetailCell.swift */; };
+		FA92FBDF2935F587007CD2F8 /* Rounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBDE2935F587007CD2F8 /* Rounter.swift */; };
+		FA92FBE12935F5AD007CD2F8 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBE02935F5AD007CD2F8 /* ApplicationRouter.swift */; };
+		FA92FBE32935F83D007CD2F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBE22935F83D007CD2F8 /* Constants.swift */; };
+		FA92FBE7293603A0007CD2F8 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA92FBE6293603A0007CD2F8 /* DetailCell.xib */; };
 		FAC44575290B98DC005757E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44574290B98DC005757E8 /* AppDelegate.swift */; };
 		FAC44577290B98DC005757E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44576290B98DC005757E8 /* SceneDelegate.swift */; };
 		FAC44579290B98DC005757E8 /* CurrencyConversionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44578290B98DC005757E8 /* CurrencyConversionScene.swift */; };
@@ -44,8 +56,16 @@
 		FA8740E6290CFD6A00640EB5 /* CurrencyMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMockService.swift; sourceTree = "<group>"; };
 		FA8740E8290D1C6700640EB5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		FA8740EA290D753B00640EB5 /* CurrencyUtitliesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUtitliesTests.swift; sourceTree = "<group>"; };
-		FA90FEBB290C5BD4009A518D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		FA90FEBC290C5BD9009A518D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/CurrencyConversion.strings; sourceTree = "<group>"; };
+		FA92FBCC2935E182007CD2F8 /* TextInputWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputWidget.swift; sourceTree = "<group>"; };
+		FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorInputWidget.swift; sourceTree = "<group>"; };
+		FA92FBD02935E1B9007CD2F8 /* SelectorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorModel.swift; sourceTree = "<group>"; };
+		FA92FBD72935ECE5007CD2F8 /* CurrencyDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailScene.swift; sourceTree = "<group>"; };
+		FA92FBD92935EDE6007CD2F8 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
+		FA92FBDB2935F25F007CD2F8 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		FA92FBDE2935F587007CD2F8 /* Rounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounter.swift; sourceTree = "<group>"; };
+		FA92FBE02935F5AD007CD2F8 /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		FA92FBE22935F83D007CD2F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA92FBE6293603A0007CD2F8 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		FAC44571290B98DC005757E8 /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC44574290B98DC005757E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC44576290B98DC005757E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA92FBD62935EC01007CD2F8 /* RxSwift in Frameworks */,
+				FA92FBD42935EC01007CD2F8 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA92FBCB2935E182007CD2F8 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				FA92FBCC2935E182007CD2F8 /* TextInputWidget.swift */,
+				FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		FA92FBDD2935F55A007CD2F8 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				FA92FBDE2935F587007CD2F8 /* Rounter.swift */,
+				FA92FBE02935F5AD007CD2F8 /* ApplicationRouter.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
 		FAC44568290B98DB005757E8 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +156,7 @@
 				FAC445A8290B99C5005757E8 /* Views */,
 				FAC445AB290B9A19005757E8 /* ViewModels */,
 				FAC445AC290B9A2B005757E8 /* Models */,
+				FA92FBDD2935F55A007CD2F8 /* Routes */,
 				FAC445AA290B99FD005757E8 /* Resources */,
 				FAC445BD290BB9C5005757E8 /* Network */,
 				FACD8EB0290C40FC00AC2951 /* Storage */,
@@ -156,8 +197,11 @@
 		FAC445A8290B99C5005757E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA92FBCB2935E182007CD2F8 /* Widgets */,
 				FAC445A9290B99F2005757E8 /* Scene */,
 				FAC44578290B98DC005757E8 /* CurrencyConversionScene.swift */,
+				FA92FBD72935ECE5007CD2F8 /* CurrencyDetailScene.swift */,
+				FA92FBDB2935F25F007CD2F8 /* DetailCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +211,7 @@
 			children = (
 				FAC44582290B98DF005757E8 /* LaunchScreen.storyboard */,
 				FAC4457A290B98DC005757E8 /* CurrencyConversion.storyboard */,
+				FA92FBE6293603A0007CD2F8 /* DetailCell.xib */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -182,6 +227,7 @@
 		FAC445AB290B9A19005757E8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FA92FBD92935EDE6007CD2F8 /* CurrencyDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,6 +235,7 @@
 		FAC445AC290B9A2B005757E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA92FBD02935E1B9007CD2F8 /* SelectorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +253,7 @@
 		FAC445BA290BB92E005757E8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FA92FBE22935F83D007CD2F8 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -240,6 +288,10 @@
 			dependencies = (
 			);
 			name = Currency;
+			packageProductDependencies = (
+				FA92FBD32935EC01007CD2F8 /* RxCocoa */,
+				FA92FBD52935EC01007CD2F8 /* RxSwift */,
+			);
 			productName = PPCurrencyConversion;
 			productReference = FAC44571290B98DC005757E8 /* Currency.app */;
 			productType = "com.apple.product-type.application";
@@ -313,6 +365,9 @@
 				ja,
 			);
 			mainGroup = FAC44568290B98DB005757E8;
+			packageReferences = (
+				FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = FAC44572290B98DC005757E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,6 +386,7 @@
 			files = (
 				FAC44584290B98DF005757E8 /* LaunchScreen.storyboard in Resources */,
 				FAC44581290B98DF005757E8 /* Assets.xcassets in Resources */,
+				FA92FBE7293603A0007CD2F8 /* DetailCell.xib in Resources */,
 				FAC4457C290B98DC005757E8 /* CurrencyConversion.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,10 +412,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA92FBDA2935EDE6007CD2F8 /* CurrencyDetailViewModel.swift in Sources */,
 				FAC44579290B98DC005757E8 /* CurrencyConversionScene.swift in Sources */,
+				FA92FBD12935E1B9007CD2F8 /* SelectorModel.swift in Sources */,
+				FA92FBCF2935E183007CD2F8 /* SelectorInputWidget.swift in Sources */,
+				FA92FBE12935F5AD007CD2F8 /* ApplicationRouter.swift in Sources */,
+				FA92FBE32935F83D007CD2F8 /* Constants.swift in Sources */,
+				FA92FBCE2935E183007CD2F8 /* TextInputWidget.swift in Sources */,
+				FA92FBD82935ECE5007CD2F8 /* CurrencyDetailScene.swift in Sources */,
+				FA92FBDC2935F25F007CD2F8 /* DetailCell.swift in Sources */,
 				FAC44575290B98DC005757E8 /* AppDelegate.swift in Sources */,
 				FA8740E9290D1C6700640EB5 /* Array.swift in Sources */,
 				FAC445B9290BB2B6005757E8 /* UIImage.swift in Sources */,
+				FA92FBDF2935F587007CD2F8 /* Rounter.swift in Sources */,
 				FAC445B2290BA11F005757E8 /* UIView.swift in Sources */,
 				FAC44577290B98DC005757E8 /* SceneDelegate.swift in Sources */,
 			);
@@ -404,7 +469,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FAC4457B290B98DC005757E8 /* Base */,
-				FA90FEBC290C5BD9009A518D /* ja */,
 			);
 			name = CurrencyConversion.storyboard;
 			sourceTree = "<group>";
@@ -413,7 +477,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FAC44583290B98DF005757E8 /* Base */,
-				FA90FEBB290C5BD4009A518D /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -711,6 +774,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA92FBD32935EC01007CD2F8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FA92FBD52935EC01007CD2F8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAC44569290B98DB005757E8 /* Project object */;
 }
