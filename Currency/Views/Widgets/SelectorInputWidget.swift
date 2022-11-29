@@ -9,17 +9,17 @@ import UIKit
 
 class SelectorInputWidget: UITextField {
     // MARK: - dataSource
-    var data = [KeyValuePair]()
+    private var data = [KeyValuePair]()
     
     // MARK: - SubView initalized
-    var pickerView = UIPickerView()
+    private var pickerView = UIPickerView()
     var currentSelectedValue: KeyValuePair?
     
     // MARK: - Design Properties
-    let hintColor: UIColor = .lightGray
-    let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 40)
-    let rightImageSize: CGFloat = 20
-    let horizantalSpacing: CGFloat = 10
+    private let hintColor: UIColor = .lightGray
+    private let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 40)
+    private let rightImageSize: CGFloat = 20
+    private let horizantalSpacing: CGFloat = 10
     
     // MARK: - Intializer
     required init?(coder: NSCoder) {
@@ -31,22 +31,29 @@ class SelectorInputWidget: UITextField {
     }
     // MARK: - Methods
     
+    func setData(data: [String: String]) {
+        self.data = [KeyValuePair]()
+        for (key, value) in data {
+            self.data.append(KeyValuePair(key: key, value: value))
+        }
+        self.data.sort(by: { $0.value < $1.value })
+    }
     func setHintColor(color: UIColor) {
         self.attributedPlaceholder = NSAttributedString(
             string: self.placeholder ?? "",
             attributes: [NSAttributedString.Key.foregroundColor: color]
         )
     }
-    func setKeyboardType() {
+    private func setKeyboardType() {
         self.inputView = pickerView
         self.inputAccessoryView = getToolbar()
     }
-    func setDelegates() {
+    private func setDelegates() {
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
         
     }
-    func getToolbar() -> UIToolbar {
+    private func getToolbar() -> UIToolbar {
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
         toolBar.isTranslucent = true
@@ -62,7 +69,7 @@ class SelectorInputWidget: UITextField {
         return toolBar
     }
     
-    func setLeftView() {
+    private func setLeftView() {
         let image = UIImage.custom.downArrow
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: rightImageSize, height: rightImageSize))
                     imageView.contentMode = .scaleAspectFit

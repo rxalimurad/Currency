@@ -11,9 +11,14 @@ struct CurrencyModel: Decodable {
     let success: Bool?
     let symbols: [String: String]?
     let error: ErrorObj?
+    let info: Info?
+    let result: Double?
     
 }
 
+struct Info: Decodable {
+    let rate: Double?
+}
 struct ErrorObj: Decodable {
     let code: Int?
     let type: String?

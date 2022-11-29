@@ -13,7 +13,7 @@ class CurrencyDetailScene: UIViewController, UITableViewDelegate {
     //MARK: - Properties
     private let bag = DisposeBag()
     private let viewModel = CurrencyDetailViewModel()
-    
+    var param: (String?, String?)? = nil
     //MARK: - Outlets
     @IBOutlet weak var historyTable: UITableView!
     @IBOutlet weak var otherCurrencyTable: UITableView!

@@ -25,6 +25,7 @@ enum HTTPMethod {
 }
 enum ServiceNames: String {
     case currencyList = "/fixer/symbols"
+    case convert = "/fixer/convert"
 }
 
 struct Endpoint {
