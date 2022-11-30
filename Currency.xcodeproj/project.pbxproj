@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F747F8A2937173800ACB356 /* HistoricalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F747F892937173800ACB356 /* HistoricalDataModel.swift */; };
+		5F747F8C2937192600ACB356 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F747F8B2937192600ACB356 /* Date.swift */; };
+		5FEBD96429370C5A00F4F1EF /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 5FEBD96329370C5A00F4F1EF /* PKHUD */; };
+		5FEBD97329370FDA00F4F1EF /* CurrencyDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBD97229370FDA00F4F1EF /* CurrencyDetailService.swift */; };
 		FA8740E9290D1C6700640EB5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8740E8290D1C6700640EB5 /* Array.swift */; };
 		FA92FBCE2935E183007CD2F8 /* TextInputWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBCC2935E182007CD2F8 /* TextInputWidget.swift */; };
 		FA92FBCF2935E183007CD2F8 /* SelectorInputWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */; };
@@ -34,24 +38,6 @@
 		FADE100C29361A69004B3837 /* CurrencyConversionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE100829361A69004B3837 /* CurrencyConversionService.swift */; };
 		FADE100E293626EF004B3837 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE100D293626EF004B3837 /* CurrencyModel.swift */; };
 		FADE101029362AC3004B3837 /* CurrencyConversionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE100F29362AC3004B3837 /* CurrencyConversionViewModel.swift */; };
-		FADE104C2936617D004B3837 /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10392936617D004B3837 /* PKHUDSystemActivityIndicatorView.swift */; };
-		FADE104D2936617D004B3837 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE103A2936617D004B3837 /* PKHUDAnimation.swift */; };
-		FADE104E2936617E004B3837 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE103B2936617D004B3837 /* PKHUDAnimating.swift */; };
-		FADE104F2936617E004B3837 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE103C2936617D004B3837 /* FrameView.swift */; };
-		FADE10502936617E004B3837 /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE103D2936617D004B3837 /* PKHUD.swift */; };
-		FADE10512936617E004B3837 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE103E2936617D004B3837 /* PKHUDSuccessView.swift */; };
-		FADE10522936617E004B3837 /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE103F2936617D004B3837 /* PKHUDAssets.swift */; };
-		FADE10532936617E004B3837 /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10402936617D004B3837 /* PKHUDWideBaseView.swift */; };
-		FADE10542936617E004B3837 /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10412936617D004B3837 /* PKHUDTextView.swift */; };
-		FADE10552936617E004B3837 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10422936617D004B3837 /* HUD.swift */; };
-		FADE10562936617E004B3837 /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10432936617D004B3837 /* PKHUDRotatingImageView.swift */; };
-		FADE10572936617E004B3837 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10442936617D004B3837 /* Window.swift */; };
-		FADE10582936617E004B3837 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10452936617D004B3837 /* WindowRootViewController.swift */; };
-		FADE10592936617E004B3837 /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10462936617D004B3837 /* PKHUDProgressView.swift */; };
-		FADE105A2936617E004B3837 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE10472936617D004B3837 /* Images.xcassets */; };
-		FADE105B2936617E004B3837 /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10482936617D004B3837 /* PKHUDSquareBaseView.swift */; };
-		FADE105C2936617E004B3837 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE10492936617D004B3837 /* PKHUDErrorView.swift */; };
-		FADE105F293670AF004B3837 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE105E293670AF004B3837 /* Utilities.swift */; };
 		FADE106129367460004B3837 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE106029367460004B3837 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F747F892937173800ACB356 /* HistoricalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataModel.swift; sourceTree = "<group>"; };
+		5F747F8B2937192600ACB356 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5FEBD97229370FDA00F4F1EF /* CurrencyDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailService.swift; sourceTree = "<group>"; };
 		FA8740E8290D1C6700640EB5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		FA92FBCC2935E182007CD2F8 /* TextInputWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputWidget.swift; sourceTree = "<group>"; };
 		FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorInputWidget.swift; sourceTree = "<group>"; };
@@ -102,25 +91,6 @@
 		FADE100829361A69004B3837 /* CurrencyConversionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConversionService.swift; sourceTree = "<group>"; };
 		FADE100D293626EF004B3837 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		FADE100F29362AC3004B3837 /* CurrencyConversionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewModel.swift; sourceTree = "<group>"; };
-		FADE10392936617D004B3837 /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
-		FADE103A2936617D004B3837 /* PKHUDAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAnimation.swift; sourceTree = "<group>"; };
-		FADE103B2936617D004B3837 /* PKHUDAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAnimating.swift; sourceTree = "<group>"; };
-		FADE103C2936617D004B3837 /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
-		FADE103D2936617D004B3837 /* PKHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUD.swift; sourceTree = "<group>"; };
-		FADE103E2936617D004B3837 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSuccessView.swift; sourceTree = "<group>"; };
-		FADE103F2936617D004B3837 /* PKHUDAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAssets.swift; sourceTree = "<group>"; };
-		FADE10402936617D004B3837 /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDWideBaseView.swift; sourceTree = "<group>"; };
-		FADE10412936617D004B3837 /* PKHUDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDTextView.swift; sourceTree = "<group>"; };
-		FADE10422936617D004B3837 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
-		FADE10432936617D004B3837 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
-		FADE10442936617D004B3837 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
-		FADE10452936617D004B3837 /* WindowRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowRootViewController.swift; sourceTree = "<group>"; };
-		FADE10462936617D004B3837 /* PKHUDProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDProgressView.swift; sourceTree = "<group>"; };
-		FADE10472936617D004B3837 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FADE10482936617D004B3837 /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
-		FADE10492936617D004B3837 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDErrorView.swift; sourceTree = "<group>"; };
-		FADE104A2936617D004B3837 /* PKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHUD.h; sourceTree = "<group>"; };
-		FADE105E293670AF004B3837 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FADE106029367460004B3837 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FEBD96429370C5A00F4F1EF /* PKHUD in Frameworks */,
 				FA92FBD62935EC01007CD2F8 /* RxSwift in Frameworks */,
 				FA92FBD42935EC01007CD2F8 /* RxCocoa in Frameworks */,
 			);
@@ -151,11 +122,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F747F88293716C500ACB356 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F747F892937173800ACB356 /* HistoricalDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FEBD96629370D5500F4F1EF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBD96729370D6E00F4F1EF /* CurrencyConversion */,
+				5FEBD96B29370E2500F4F1EF /* CurrencyDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5FEBD96729370D6E00F4F1EF /* CurrencyConversion */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBD96829370D8000F4F1EF /* View */,
+				5FEBD96929370DAC00F4F1EF /* ViewModel */,
+				5FEBD96A29370DC500F4F1EF /* Model */,
+				5FEBD97029370FA700F4F1EF /* Services */,
+			);
+			path = CurrencyConversion;
+			sourceTree = "<group>";
+		};
+		5FEBD96829370D8000F4F1EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4457A290B98DC005757E8 /* CurrencyConversion.storyboard */,
+				FAC44578290B98DC005757E8 /* CurrencyConversionScene.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FEBD96929370DAC00F4F1EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FADE100F29362AC3004B3837 /* CurrencyConversionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FEBD96A29370DC500F4F1EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADE100D293626EF004B3837 /* CurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FEBD96B29370E2500F4F1EF /* CurrencyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBD96C29370E4C00F4F1EF /* View */,
+				5FEBD96E29370E8800F4F1EF /* ViewModel */,
+				5FEBD97129370FC300F4F1EF /* Service */,
+				5F747F88293716C500ACB356 /* Model */,
+			);
+			path = CurrencyDetail;
+			sourceTree = "<group>";
+		};
+		5FEBD96C29370E4C00F4F1EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA92FBD72935ECE5007CD2F8 /* CurrencyDetailScene.swift */,
+				5FEBD96D29370E6600F4F1EF /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FEBD96D29370E6600F4F1EF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA92FBE6293603A0007CD2F8 /* DetailCell.xib */,
+				FA92FBDB2935F25F007CD2F8 /* DetailCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5FEBD96E29370E8800F4F1EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA92FBD92935EDE6007CD2F8 /* CurrencyDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FEBD96F29370EE700F4F1EF /* SelectorWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */,
+				FA92FBD02935E1B9007CD2F8 /* SelectorModel.swift */,
+			);
+			path = SelectorWidget;
+			sourceTree = "<group>";
+		};
+		5FEBD97029370FA700F4F1EF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FADE100829361A69004B3837 /* CurrencyConversionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5FEBD97129370FC300F4F1EF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBD97229370FDA00F4F1EF /* CurrencyDetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		FA92FBCB2935E182007CD2F8 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
 				FA92FBCC2935E182007CD2F8 /* TextInputWidget.swift */,
-				FA92FBCD2935E182007CD2F8 /* SelectorInputWidget.swift */,
+				5FEBD96F29370EE700F4F1EF /* SelectorWidget */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -173,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC44573290B98DC005757E8 /* Currency */,
+				FAC44582290B98DF005757E8 /* LaunchScreen.storyboard */,
 				FAC4458D290B98DF005757E8 /* CurrencyTests */,
 				FAC44597290B98DF005757E8 /* CurrencyUITests */,
 				FAC44572290B98DC005757E8 /* Products */,
@@ -194,14 +281,12 @@
 			children = (
 				FAC445A7290B98F2005757E8 /* Application */,
 				FAC445BA290BB92E005757E8 /* Constants */,
-				FAC445A8290B99C5005757E8 /* Views */,
-				FAC445AB290B9A19005757E8 /* ViewModels */,
-				FAC445AC290B9A2B005757E8 /* Models */,
+				FA92FBCB2935E182007CD2F8 /* Widgets */,
+				5FEBD96629370D5500F4F1EF /* Modules */,
 				FA92FBDD2935F55A007CD2F8 /* Routes */,
 				FAC445AA290B99FD005757E8 /* Resources */,
 				FAC445BD290BB9C5005757E8 /* Network */,
 				FAC445AE290B9F5E005757E8 /* Extensions */,
-				FADE101129365FE2004B3837 /* Vendor */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -230,52 +315,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		FAC445A8290B99C5005757E8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FA92FBCB2935E182007CD2F8 /* Widgets */,
-				FAC445A9290B99F2005757E8 /* Scene */,
-				FAC44578290B98DC005757E8 /* CurrencyConversionScene.swift */,
-				FA92FBD72935ECE5007CD2F8 /* CurrencyDetailScene.swift */,
-				FA92FBDB2935F25F007CD2F8 /* DetailCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FAC445A9290B99F2005757E8 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				FAC44582290B98DF005757E8 /* LaunchScreen.storyboard */,
-				FAC4457A290B98DC005757E8 /* CurrencyConversion.storyboard */,
-				FA92FBE6293603A0007CD2F8 /* DetailCell.xib */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
 		FAC445AA290B99FD005757E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				FAC44580290B98DF005757E8 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		FAC445AB290B9A19005757E8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				FA92FBD92935EDE6007CD2F8 /* CurrencyDetailViewModel.swift */,
-				FADE100F29362AC3004B3837 /* CurrencyConversionViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		FAC445AC290B9A2B005757E8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FA92FBD02935E1B9007CD2F8 /* SelectorModel.swift */,
-				FADE100D293626EF004B3837 /* CurrencyModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		FAC445AE290B9F5E005757E8 /* Extensions */ = {
@@ -285,6 +330,7 @@
 				FAC445B8290BB2B6005757E8 /* UIImage.swift */,
 				FA8740E8290D1C6700640EB5 /* Array.swift */,
 				FADE106029367460004B3837 /* UIViewController.swift */,
+				5F747F8B2937192600ACB356 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,7 +339,6 @@
 			isa = PBXGroup;
 			children = (
 				FA92FBE22935F83D007CD2F8 /* Constants.swift */,
-				FADE105E293670AF004B3837 /* Utilities.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -302,44 +347,10 @@
 			isa = PBXGroup;
 			children = (
 				FADE100629361A68004B3837 /* APIClient.swift */,
-				FADE100829361A69004B3837 /* CurrencyConversionService.swift */,
 				FADE100729361A69004B3837 /* Errors.swift */,
 				FADE100529361A68004B3837 /* URLRequestConvertibleType.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		FADE101129365FE2004B3837 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				FADE10382936617D004B3837 /* PKHUD */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		FADE10382936617D004B3837 /* PKHUD */ = {
-			isa = PBXGroup;
-			children = (
-				FADE10392936617D004B3837 /* PKHUDSystemActivityIndicatorView.swift */,
-				FADE103A2936617D004B3837 /* PKHUDAnimation.swift */,
-				FADE103B2936617D004B3837 /* PKHUDAnimating.swift */,
-				FADE103C2936617D004B3837 /* FrameView.swift */,
-				FADE103D2936617D004B3837 /* PKHUD.swift */,
-				FADE103E2936617D004B3837 /* PKHUDSuccessView.swift */,
-				FADE103F2936617D004B3837 /* PKHUDAssets.swift */,
-				FADE10402936617D004B3837 /* PKHUDWideBaseView.swift */,
-				FADE10412936617D004B3837 /* PKHUDTextView.swift */,
-				FADE10422936617D004B3837 /* HUD.swift */,
-				FADE10432936617D004B3837 /* PKHUDRotatingImageView.swift */,
-				FADE10442936617D004B3837 /* Window.swift */,
-				FADE10452936617D004B3837 /* WindowRootViewController.swift */,
-				FADE10462936617D004B3837 /* PKHUDProgressView.swift */,
-				FADE10472936617D004B3837 /* Images.xcassets */,
-				FADE10482936617D004B3837 /* PKHUDSquareBaseView.swift */,
-				FADE10492936617D004B3837 /* PKHUDErrorView.swift */,
-				FADE104A2936617D004B3837 /* PKHUD.h */,
-			);
-			path = PKHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +372,7 @@
 			packageProductDependencies = (
 				FA92FBD32935EC01007CD2F8 /* RxCocoa */,
 				FA92FBD52935EC01007CD2F8 /* RxSwift */,
+				5FEBD96329370C5A00F4F1EF /* PKHUD */,
 			);
 			productName = PPCurrencyConversion;
 			productReference = FAC44571290B98DC005757E8 /* Currency.app */;
@@ -437,6 +449,7 @@
 			mainGroup = FAC44568290B98DB005757E8;
 			packageReferences = (
 				FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				5FEBD96229370C5A00F4F1EF /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = FAC44572290B98DC005757E8 /* Products */;
 			projectDirPath = "";
@@ -455,7 +468,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC44584290B98DF005757E8 /* LaunchScreen.storyboard in Resources */,
-				FADE105A2936617E004B3837 /* Images.xcassets in Resources */,
 				FAC44581290B98DF005757E8 /* Assets.xcassets in Resources */,
 				FA92FBE7293603A0007CD2F8 /* DetailCell.xib in Resources */,
 				FAC4457C290B98DC005757E8 /* CurrencyConversion.storyboard in Resources */,
@@ -483,15 +495,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADE10502936617E004B3837 /* PKHUD.swift in Sources */,
 				FA92FBDA2935EDE6007CD2F8 /* CurrencyDetailViewModel.swift in Sources */,
 				FADE100A29361A69004B3837 /* APIClient.swift in Sources */,
-				FADE10512936617E004B3837 /* PKHUDSuccessView.swift in Sources */,
 				FAC44579290B98DC005757E8 /* CurrencyConversionScene.swift in Sources */,
 				FADE100C29361A69004B3837 /* CurrencyConversionService.swift in Sources */,
 				FA92FBD12935E1B9007CD2F8 /* SelectorModel.swift in Sources */,
-				FADE104C2936617D004B3837 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
 				FA92FBCF2935E183007CD2F8 /* SelectorInputWidget.swift in Sources */,
+				5F747F8C2937192600ACB356 /* Date.swift in Sources */,
 				FA92FBE12935F5AD007CD2F8 /* ApplicationRouter.swift in Sources */,
 				FADE100929361A69004B3837 /* URLRequestConvertibleType.swift in Sources */,
 				FA92FBE32935F83D007CD2F8 /* Constants.swift in Sources */,
@@ -499,29 +509,17 @@
 				FADE100E293626EF004B3837 /* CurrencyModel.swift in Sources */,
 				FA92FBD82935ECE5007CD2F8 /* CurrencyDetailScene.swift in Sources */,
 				FA92FBDC2935F25F007CD2F8 /* DetailCell.swift in Sources */,
-				FADE10542936617E004B3837 /* PKHUDTextView.swift in Sources */,
-				FADE105C2936617E004B3837 /* PKHUDErrorView.swift in Sources */,
 				FAC44575290B98DC005757E8 /* AppDelegate.swift in Sources */,
-				FADE10552936617E004B3837 /* HUD.swift in Sources */,
+				5FEBD97329370FDA00F4F1EF /* CurrencyDetailService.swift in Sources */,
 				FADE106129367460004B3837 /* UIViewController.swift in Sources */,
 				FA8740E9290D1C6700640EB5 /* Array.swift in Sources */,
-				FADE104D2936617D004B3837 /* PKHUDAnimation.swift in Sources */,
 				FADE101029362AC3004B3837 /* CurrencyConversionViewModel.swift in Sources */,
-				FADE10582936617E004B3837 /* WindowRootViewController.swift in Sources */,
+				5F747F8A2937173800ACB356 /* HistoricalDataModel.swift in Sources */,
 				FAC445B9290BB2B6005757E8 /* UIImage.swift in Sources */,
-				FADE104E2936617E004B3837 /* PKHUDAnimating.swift in Sources */,
 				FA92FBDF2935F587007CD2F8 /* Rounter.swift in Sources */,
-				FADE10592936617E004B3837 /* PKHUDProgressView.swift in Sources */,
-				FADE10562936617E004B3837 /* PKHUDRotatingImageView.swift in Sources */,
 				FAC445B2290BA11F005757E8 /* UIView.swift in Sources */,
-				FADE10532936617E004B3837 /* PKHUDWideBaseView.swift in Sources */,
 				FADE100B29361A69004B3837 /* Errors.swift in Sources */,
-				FADE105F293670AF004B3837 /* Utilities.swift in Sources */,
-				FADE104F2936617E004B3837 /* FrameView.swift in Sources */,
 				FAC44577290B98DC005757E8 /* SceneDelegate.swift in Sources */,
-				FADE10522936617E004B3837 /* PKHUDAssets.swift in Sources */,
-				FADE10572936617E004B3837 /* Window.swift in Sources */,
-				FADE105B2936617E004B3837 /* PKHUDSquareBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +864,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5FEBD96229370C5A00F4F1EF /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -877,6 +883,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5FEBD96329370C5A00F4F1EF /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FEBD96229370C5A00F4F1EF /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
 		FA92FBD32935EC01007CD2F8 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA92FBD22935EC01007CD2F8 /* XCRemoteSwiftPackageReference "RxSwift" */;

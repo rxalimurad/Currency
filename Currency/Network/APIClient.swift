@@ -29,7 +29,11 @@ final class APIClient: APIClientType {
             dataTask = defaultSession.dataTask(with: urlRequest) { data, response, error in
                 if let data = data, let response = response as? HTTPURLResponse,  response.statusCode == 200 {
                     result = Result<Data, NetworkRequestError>.Success(data)
-                } else {
+                } else if (response as? HTTPURLResponse)?.statusCode == 429 {
+                    result = Result<Data, NetworkRequestError>.Failure(NetworkRequestError.serverError(error: "Too many request"))
+                }
+                
+                else {
                     if let error = error {
                         result = Result<Data, NetworkRequestError>.Failure(NetworkRequestError.serverError(error: error.localizedDescription))
                     }
