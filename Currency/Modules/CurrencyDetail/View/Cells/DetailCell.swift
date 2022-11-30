@@ -9,7 +9,8 @@ import UIKit
 
 class DetailCell: UITableViewCell {
     @IBOutlet var label: UILabel!
-    var item: KeyValuePair? {
+    @IBOutlet var date: UILabel!
+    var item: HistoricalRecord? {
         didSet {
             setConversionData()
         }
@@ -19,7 +20,8 @@ class DetailCell: UITableViewCell {
         guard let item = item else {
             return
         }
-        self.label.text = "\(item.key) → \(item.value)"
+        self.date.text = item.date
+        self.label.text = "\(item.fromAmount) \(item.fromCurrency) → \(item.toAmount) \(item.toCurrency)"
     }
    
 

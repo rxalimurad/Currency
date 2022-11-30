@@ -7,32 +7,144 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E7428563-C21F-4B25-A66B-D46CEE603285"
+            uuid = "312BB0AF-EA07-4D30-B24C-FCB85A8F7531"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PPCurrencyConversionTests/PPCurrencyConversionTests.swift"
+            filePath = "Currency/Network/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "testDataPersistance()"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "request(endPoint:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "312BB0AF-EA07-4D30-B24C-FCB85A8F7531 - 423fc47098403537"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Currency.Result&lt;Foundation.Data, Currency.NetworkRequestError&gt;&gt;) -&gt; RxSwift.Disposable in Currency.APIClient.request(endPoint: Currency.URLRequestConvertibleType) -&gt; RxSwift.Observable&lt;Currency.Result&lt;Foundation.Data, Currency.NetworkRequestError&gt;&gt;"
+                  moduleName = "Currency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/murad/Desktop/Currency/Currency/Network/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "291">
+               </Location>
+               <Location
+                  uuid = "312BB0AF-EA07-4D30-B24C-FCB85A8F7531 - 423fc47098403537"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Currency.Result&lt;Foundation.Data, Currency.NetworkRequestError&gt;&gt;) -&gt; RxSwift.Disposable in Currency.APIClient.request(endPoint: Currency.URLRequestConvertibleType) -&gt; RxSwift.Observable&lt;Currency.Result&lt;Foundation.Data, Currency.NetworkRequestError&gt;&gt;"
+                  moduleName = "Currency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/murad/Desktop/Currency/Currency/Network/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "361">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1189FDF-57BA-42A7-8555-118CD96C82F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Currency/Network/CurrencyConversionService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getCurrencyList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "680383D7-6A56-48BA-A878-7C37BBB6513F"
+            uuid = "BE04F013-0A65-455D-BC64-1D0F79A13707"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Currency/Routes/ApplicationRouter.swift"
+            filePath = "Currency/Network/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "route(to:from:parameters:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "request(endPoint:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56C64019-FD0F-4259-85E6-E8410F1BFD93"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Currency/ViewModels/CurrencyConversionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "covert(from:to:amount:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF6FFA4C-51E5-41F9-B59C-797123D32EA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Currency/Extensions/UIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "showToast(message:font:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73AC8424-9666-437D-9389-DB843961B55D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Currency/ViewModels/CurrencyConversionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "covert(from:to:amount:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5B6BC11-0A27-4717-87C0-E12B1E358C70"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Currency/Network/CurrencyConversionService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "convertCurrency(from:to:amount:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

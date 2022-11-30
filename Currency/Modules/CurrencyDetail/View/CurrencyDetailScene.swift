@@ -12,8 +12,8 @@ import RxCocoa
 class CurrencyDetailScene: UIViewController, UITableViewDelegate {
     //MARK: - Properties
     private let bag = DisposeBag()
-    private let viewModel = CurrencyDetailViewModel()
-    
+    private var viewModel: CurrencyDetailViewModelType = CurrencyDetailViewModel(service: CurrencyDetailService())
+    var param: HistoryParam? = nil
     //MARK: - Outlets
     @IBOutlet weak var historyTable: UITableView!
     @IBOutlet weak var otherCurrencyTable: UITableView!
@@ -24,6 +24,7 @@ class CurrencyDetailScene: UIViewController, UITableViewDelegate {
         historyTable.rx.setDelegate(self).disposed(by: bag)
         otherCurrencyTable.rx.setDelegate(self).disposed(by: bag)
         bindTableViews()
+        viewModel.delegate = self
     }
     
     //MARK: - Methods
@@ -38,12 +39,28 @@ class CurrencyDetailScene: UIViewController, UITableViewDelegate {
         }.disposed(by: bag)
         
         viewModel.otherCurrency.bind(to: otherCurrencyTable.rx.items(cellIdentifier: Constants.cell.detailCell, cellType: DetailCell.self)) { (row,item,cell) in
-            cell.item = item
+            let data = HistoricalRecord(date: item.key, fromCurrency: self.param!.from, toCurrency: item.key, toAmount: item.value, fromAmount: self.param!.amount)
+            cell.item = data
         }.disposed(by: bag)
         
         // fetch data
-        viewModel.fetchConversionList()
-        viewModel.fetchOtherList()
+        if let param = param {
+            viewModel.fetchConversionList(from: param.from, to: param.to, amount: param.amount)
+        }
+        
     }
+}
+
+extension CurrencyDetailScene: ConversionVMDelegate {
+    func showError(msg: NetworkRequestError) {
+        switch msg {
+        case .serverError(let error):
+            self.showToast(message: error, font: .systemFont(ofSize: 20))
+        default:
+            self.showToast(message: "\(msg)", font: .systemFont(ofSize: 20))
+        }
+    }
+    
+    
 }
 

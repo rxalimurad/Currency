@@ -49,11 +49,14 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.left.arrow.right" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionForSwapBtnWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auD-Mv-PEW"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="From amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-lP-K7a" userLabel="FromInput" customClass="TextInputWidget" customModule="Currency" customModuleProvider="target">
                                 <rect key="frame" x="30" y="263" width="147" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +69,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MW1-pv-WHk" userLabel="ToInput" customClass="TextInputWidget" customModule="Currency" customModuleProvider="target">
                                 <rect key="frame" x="237" y="263" width="147" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,6 +134,13 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="g3W-7m-Ahi"/>
+                    <connections>
+                        <outlet property="detailBtn" destination="lRo-jY-dKE" id="osd-gJ-8Sk"/>
+                        <outlet property="fromAmountInput" destination="DaR-lP-K7a" id="Zsp-QV-QbU"/>
+                        <outlet property="fromCurrSelector" destination="63q-9f-sbm" id="b75-cR-TM8"/>
+                        <outlet property="toAmountInput" destination="MW1-pv-WHk" id="1pO-gY-j9v"/>
+                        <outlet property="toCurrSelector" destination="4CO-zr-hMh" id="Equ-9u-1oc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +249,12 @@
         </designable>
         <designable name="63q-9f-sbm">
             <size key="intrinsicContentSize" width="122" height="34"/>
+        </designable>
+        <designable name="DaR-lP-K7a">
+            <size key="intrinsicContentSize" width="113.5" height="34"/>
+        </designable>
+        <designable name="MW1-pv-WHk">
+            <size key="intrinsicContentSize" width="96" height="34"/>
         </designable>
     </designables>
     <resources>

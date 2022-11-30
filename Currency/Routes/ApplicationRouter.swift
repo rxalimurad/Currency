@@ -20,7 +20,7 @@ class ApplicationRouter: Router {
         case .detailScreen:
             let vc = UIStoryboard(name: Constants.Storyboard.currency, bundle: nil)
                 .instantiateViewController(withIdentifier: Constants.StoryboardId.detailScene) as! CurrencyDetailScene
-//            vc.parameters = parameters
+            vc.param = parameters as? HistoryParam
             context.navigationController?.pushViewController(vc, animated: true)
         }
         

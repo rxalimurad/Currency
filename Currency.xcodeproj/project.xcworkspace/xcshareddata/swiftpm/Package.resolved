@@ -1,16 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "RxSwift",
-        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
-          "version": "6.5.0"
-        }
+  "pins" : [
+    {
+      "identity" : "pkhud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pkluz/PKHUD.git",
+      "state" : {
+        "revision" : "8fd26f23057c6bebd6695524b1c3e05e93aba571",
+        "version" : "5.4.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    }
+  ],
+  "version" : 2
 }
