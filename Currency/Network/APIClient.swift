@@ -34,8 +34,8 @@ final class APIClient: APIClientType {
                 }
                 
                 else {
-                    if let error = error {
-                        result = Result<Data, NetworkRequestError>.Failure(NetworkRequestError.serverError(error: error.localizedDescription))
+                    if error != nil {
+                        result = Result<Data, NetworkRequestError>.Failure(NetworkRequestError.serverError(error: "Connection Error"))
                     }
                 }
                 observer.onNext(result!)

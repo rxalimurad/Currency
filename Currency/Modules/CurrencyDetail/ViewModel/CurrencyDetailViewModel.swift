@@ -11,18 +11,26 @@ import RxCocoa
 import PKHUD
 
 protocol CurrencyDetailViewModelType {
-    
-    
+    var service: CurrencyDetailsServiceType { get }
+    var delegate: ConversionVMDelegate? { get set}
+    var history: PublishSubject<[HistoricalRecord]>  { get set }
+    var otherCurrency: PublishSubject<[KeyValuePair]>  { get set }
+    func fetchConversionList(from: String, to: String, amount: String)
+    func fetchOtherList(from: String, amount: String)
 }
 
 
-class CurrencyDetailViewModel {
-    var service = CurrencyDetailService(apiClient: APIClient())
+class CurrencyDetailViewModel: CurrencyDetailViewModelType {
+    var service: CurrencyDetailsServiceType
     var disposeBag = DisposeBag()
     var delegate: ConversionVMDelegate?
+    var history = PublishSubject<[HistoricalRecord]>()
+    var otherCurrency = PublishSubject<[KeyValuePair]>()
     
-    let history = PublishSubject<[HistoricalRecord]>()
-    let otherCurrency = PublishSubject<[KeyValuePair]>()
+    
+    init(service: CurrencyDetailsServiceType) {
+        self.service = service
+    }
     
     func fetchConversionList(from: String, to: String, amount: String) {
         PKHUD.sharedHUD.contentView = PKHUDProgressView(subtitle: "Fetching historical data")

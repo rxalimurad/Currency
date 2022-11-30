@@ -7,23 +7,21 @@
 
 import Foundation
 import RxSwift
-//
-//protocol CurrencyDetailsServiceType {
-//    func getCurrencyList() -> Observable<Result<CurrencyModel, NetworkRequestError>>
-//    func convertCurrency(from: String, to: String, amount: String) -> Observable<Result<Double, NetworkRequestError>>
-//}
-//: CurrencyConversionServiceType
 
-final class CurrencyDetailService {
+protocol CurrencyDetailsServiceType {
+    init(apiClient: APIClientType)
+    func fetchHistory(from: String, to: String, amount: String) -> Observable<Result<[HistoricalRecord], NetworkRequestError>>
+    func fetchOtherConversion(from: String, amount: String) -> Observable<Result<[KeyValuePair], NetworkRequestError>>
+}
+
+final class CurrencyDetailService: CurrencyDetailsServiceType {
     private let apiClient: APIClientType
     
     init(apiClient: APIClientType = APIClient()) {
         self.apiClient = apiClient
     }
-    
+    // MARK: - Services
     func fetchHistory(from: String, to: String, amount: String) -> Observable<Result<[HistoricalRecord], NetworkRequestError>> {
-        
-        
         let req = Endpoint(sericeName: .history,
                            method: .get,
                            queryItems: ["base": from,
@@ -88,7 +86,7 @@ final class CurrencyDetailService {
             })
     }
     
-    
+    // MARK: - Methods
     private func processLatestData(amount: String, rateMap: [String: Double]?) -> [KeyValuePair] {
         var rateList = [KeyValuePair]()
         if let rateMap = rateMap {
@@ -96,7 +94,7 @@ final class CurrencyDetailService {
                 rateList.append(KeyValuePair(key: curr, value: "\(convRate * Double(amount)!)"))
             }
         }
-                
+        
         return rateList
     }
     
@@ -105,7 +103,7 @@ final class CurrencyDetailService {
         to: String,
         rates: [String: [String: Double]]?,
         amount: String) -> [HistoricalRecord] {
-        var list = [HistoricalRecord]()
+            var list = [HistoricalRecord]()
             if let rates = rates {
                 for (date, rate) in rates {
                     let conversionRate = rate[to] ?? 1.0
@@ -114,6 +112,6 @@ final class CurrencyDetailService {
                 }
             }
             
-        return list
-    }
+            return list
+        }
 }

@@ -29,7 +29,7 @@ class CurrencyConversionScene: UIViewController {
         DispatchQueue.main.async {
             self.viewModel.fetchCurrencySymbol()
         }
-       setDelegates()
+        setDelegates()
         
     }
     
@@ -93,7 +93,7 @@ extension CurrencyConversionScene: UITextFieldDelegate {
             && !toCurrSelector.text!.isEmpty
             && !fromAmountInput.text!.isEmpty {
             detailBtn.isHidden = false
-                convertAmounts()
+            convertAmounts()
         } else {
             detailBtn.isHidden = true
         }

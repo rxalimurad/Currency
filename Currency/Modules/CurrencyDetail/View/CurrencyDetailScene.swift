@@ -12,7 +12,7 @@ import RxCocoa
 class CurrencyDetailScene: UIViewController, UITableViewDelegate {
     //MARK: - Properties
     private let bag = DisposeBag()
-    private let viewModel = CurrencyDetailViewModel()
+    private var viewModel: CurrencyDetailViewModelType = CurrencyDetailViewModel(service: CurrencyDetailService())
     var param: HistoryParam? = nil
     //MARK: - Outlets
     @IBOutlet weak var historyTable: UITableView!
